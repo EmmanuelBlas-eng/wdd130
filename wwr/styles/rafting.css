@@ -1,6 +1,4 @@
-/* ==========================================
-   1. VARIABLES & RESET
-   ========================================== */
+/* Variable reset */
 :root {
   --primary-color: #055a05;      /* Forest Green */
   --secondary-color: #f4a261;    /* Warm Sand */
@@ -16,9 +14,7 @@
   box-sizing: border-box;
 }
 
-/* ==========================================
-   2. GENERAL PAGE STYLING
-   ========================================== */
+/* General Page Styling */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
@@ -40,9 +36,8 @@ nav, p, section, article {
   padding: 8px;
 }
 
-/* ==========================================
-   3. HEADER & NAVIGATION STYLING
-   ========================================== */
+
+/* Header and Nav Styling */
 header {
   display: flex;
   justify-content: space-between;
@@ -52,7 +47,7 @@ header {
 }
 
 header .logo {
-  max-height: 70px; /* Ensures your logo scales properly */
+  max-height: 70px; /* Ensures logo scales properly */
   width: auto;
 }
 
@@ -73,9 +68,7 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* ==========================================
-   4. HERO & OVERLAY STYLING
-   ========================================== */
+/* Hero and Overlay Styling */
 .hero {
   position: relative;
   margin: 0; /* Flush with layout bounds */
@@ -107,6 +100,7 @@ h1 {
   padding: 20px;
   border-radius: 5px;
   margin: 0;
+
 }
 
 .hero article img {
@@ -118,17 +112,16 @@ h1 {
 }
 
 .hero article p {
-  margin: 0;
+  margin-top: 50px;
   padding: 0;
   line-height: 1.5;
+  text-align: justify;
 }
 
-/* ==========================================
-   5. SECTIONS STYLING
-   ========================================== */
+/* Section Styling */
 .history-section, .adventure-section {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border-top: 4px solid var(--secondary-color);
   margin: 20px 0;
   padding: 20px;
 }
@@ -137,11 +130,10 @@ h1 {
   margin: 10px 0 0 0;
   padding: 0;
   line-height: 1.6;
+  text-align: justify;
 }
 
-/* ==========================================
-   6. FOOTER STYLING
-   ========================================== */
+/* Footer Styling */
 footer {
   display: flex;
   justify-content: space-between;
