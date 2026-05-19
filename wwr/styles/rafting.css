@@ -1,76 +1,179 @@
+/* ==========================================
+   1. VARIABLES & RESET
+   ========================================== */
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvitica, sans-serif;
-
+  --primary-color: #055a05;      /* Forest Green */
+  --secondary-color: #f4a261;    /* Warm Sand */
+  --accent1-color: #264653;      /* Dark Slate Blue */
+  --accent2-color: #e9c46a;      /* Light Golden Yellow */
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
-
-
+/* ==========================================
+   2. GENERAL PAGE STYLING
+   ========================================== */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #fafafa; /* Soft off-white background */
 }
 
 header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-
+  width: 840px;
+  margin: 0 auto;
 }
 
 h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+  margin: 16px;
+  padding: 8px;
 }
 
-.socialmeadia {
-    text-decoration: none;
+/* ==========================================
+   3. HEADER & NAVIGATION STYLING
+   ========================================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
 }
 
+header .logo {
+  max-height: 70px; /* Ensures your logo scales properly */
+  width: auto;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ==========================================
+   4. HERO & OVERLAY STYLING
+   ========================================== */
 .hero {
-    position: relative;
+  position: relative;
+  margin: 0; /* Flush with layout bounds */
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color:  #fff
-    ;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.85;
+  background-color: var(--accent1-color);
+  color: #fff; 
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Opaque white box so text is readable */
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0;
 }
 
 .hero article img {
-    float: right;
-    width: 125px;
+  float: right;
+  width: 125px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  border: 2px solid var(--primary-color);
 }
 
+.hero article p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
 
+/* ==========================================
+   5. SECTIONS STYLING
+   ========================================== */
+.history-section, .adventure-section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.history-section p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   6. FOOTER STYLING
+   ========================================== */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent1-color);
+  color: #fff;
+  padding: 15px 20px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1); /* Minor interaction effect */
+}
