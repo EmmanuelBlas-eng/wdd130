@@ -1,23 +1,46 @@
+header {
+    max-width: 840px;
+    margin: 0 auto;
+   
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
 }
 
 h1 {
     color: darkblue;
-    margin: 1rem;
+    margin: 1rem ;
+    border-bottom: 1px solid black;
+    
+    
+}
+main {
+    max-width: 840px;
 }
 
 main img {
@@ -27,64 +50,92 @@ main img {
     padding: px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 3rem;
+    margin: 0 1rem 1rem 2rem;
     
 }
-
-ul li  {
-    margin: 0 0 0 1rem;
-    
-}
-main p {
-    font-size: 24px;
-}
-
 p {
-    padding: 0;
-    margin: 1rem;
-    text-align: justify; 
-    
-}
-
-main {
-    max-width: 840px;
+      margin: 1rem;
+      text-align: justify;
 }
 
 aside {
-    width: 20rem; 
+    width: 20em; 
     text-align: center; 
     position: relative; 
 }
 
-aside h2 {
-    position: absolute;
-    top: 25px;
-    left: 100px;
-}
 
 aside img {
     width: 200px;
     height: auto;
 }
-aside p {
-    text-align: justify;
-}
 
-footer {
-    margin-top: 15px;
+aside h2 {
+    position: absolute;
+    top: 27px;
+    left: 75px;
+    
+}
+footer p {
+    margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
 }
 
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+  width: 100%; /* Ensures it scales down nicely on smaller screens */
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main{
+    margin: 1rem;
+    grid-column: 2;
+}
+
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+    
+
+
+
 /* Class Selector */
 .box {
     margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
     background-color: #ddd;
-    border: 1px solid rgb(0 0 0 / 10%);
-    color: #000;
-    font-size: 20px;
-    
+    color: #000;  
 }
+
+.indent {
+   padding-left: 1.75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
