@@ -19,6 +19,7 @@ body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: #fafafa; /* Soft off-white background */
+  text-align: center;
 }
 
 header, main, footer {
@@ -92,8 +93,8 @@ h1 {
 }
 
 .hero article {
-  position: absolute;
-  bottom: 20px;
+  position:absolute;
+  bottom: 80px;
   left: 20px;
   right: 20px;
   background-color: rgba(255, 255, 255, 0.9); /* Opaque white box so text is readable */
@@ -109,6 +110,12 @@ h1 {
   margin-left: 15px;
   margin-bottom: 5px;
   border: 2px solid var(--primary-color);
+}
+
+.hero article h2 {
+  margin-bottom: 10px;
+  position: absolute;
+  margin: 0 0 0 20rem;
 }
 
 .hero article p {
@@ -142,12 +149,15 @@ footer {
   color: #fff;
   padding: 15px 20px;
   margin-top: 30px;
+  
+  
 }
 
 footer p {
-  margin: 0;
+  margin: 0 0 0 10rem;
   padding: 0;
 }
+
 
 .socialmedia {
   display: flex;
@@ -168,4 +178,53 @@ footer p {
 
 .socialmedia img:hover {
   transform: scale(1.1); /* Minor interaction effect */
+}
+
+/* ==========================================================================
+   NEW ADDITIONS: Layout alignments built directly over your references
+   ========================================================================== */
+
+/* History 3-Column Grid Wireframe Layout */
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.history-col.image-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Adventure 5-Column Figure Grid Wireframe Layout */
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.adventure-gallery figure {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-family: var(--body-font);
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--accent1-color);
 }

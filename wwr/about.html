@@ -12,8 +12,10 @@
 <body>
 
     <header>
-        <img src="images/wwr-logo.png" alt="White Water Rafting Logo" class="logo">
-        <nav>
+        <div class="logo">
+            <img src="images/wwr-logo.png" alt="White Water Rafting Logo" class="logo">
+        </div>    
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -25,35 +27,61 @@
 
     <main>
         <div class="hero">
-
             <img src="images/rafting-main.jpg" alt="Top view group of people rafting">
-
             <h1> Whitewater Rafting Adventures</h1>
-
             <article>
-                <h2> Our Mission</h2>
-
                 <img src="images/rafting-article.jpg" alt="Group of people rafting">
-                <p>
-                    Our goal is to provide you with the best experience possible. We have been providing unforgettable experiences for over 30 years. We are a family owned and operated business that is dedicated to providing you with the best experience possible. We have a team of experienced guides that are dedicated to providing you with.
-                </p>   
+                <h2> Our Mission</h2>
+                <p> Our goal is to provide you with the best experience possible. We have been providing unforgettable experiences for over 30 years. We are a family owned and operated business that is dedicated to providing you with the best experience possible. We have a team of experienced guides that are dedicated to providing you with.</p>
             </article>
         </div>
-
         <section class="history-section">
             <h2> History </h2>
-            <p>
-                Founded in 2010 by a small group of passionate river guides, Whitewater Rafting Adventures grew from a single raft and a dream into one of the region's premier outdoor outfitters. Over the last decade and a half, we have safely guided over 50,000 guests down some of the most challenging and scenic class III-V rapids. We remain family-owned and committed to environmental preservation.
-            </p>
+            <div class="history-grid">
+                <div class="history-text-left">
+                    <p>
+                        Founded in 2010 by a small group of passionate river guides, Whitewater Rafting Adventures grew from a single raft and a dream into one of the region's premier outdoor outfitters. Over the last decade and a half, we have safely guided over 50,000 guests down some of the most challenging and scenic class III-V rapids. We remain family-owned and committed to environmental preservation.
+                    </p>
+                </div>
+                <div class="history-col image-col">
+                    <img src="images/history_center.jpg" alt="Historical Rafting Photo" width="200">
+                </div>
+                <div class="history-col">
+                    <p>Our journey has been fueled by adventure and a deep respect for nature. Every rapid tells a story, and our guides are trained to share that history with you. Join us as we look forward to another decade of unforgettable river memories, thrilling waves, and strong community building.</p>
+                </div>
+            </div>
         </section>
 
         <section class="adventure-section">
             <h2>Adventure Awaits You!</h2>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/adventure1.jpg" alt="Los Dientes del Diablo rapid">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure2.jpg" alt="Big Mallard rapid">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure3.jpg" alt="Half Day Adventure trip">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure4.jpg" alt="Full Day Adventure trip">
+                    <figcaption>Full Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure5.jpg" alt="The Gauntlet rapid">
+                    <figcaption>The Gauntlet</figcaption>
+                </figure>
+            </div>
         </section>
-    </main>  
+    </main> 
+
     <footer>
         <p> &COPY; 2026 | White Water Rafting Company | Emmanuel Blas Roberto</p>
-        <nav class="socialmedia" >
+        <div class="socialmedia">
             <a href="https://www.facebook.com/">
                 <img src="images/facebook.png" alt="Facebook Icon" >
             </a>
@@ -63,7 +91,7 @@
             <a href="https://www.instagram.com/?hl=en">
                 <img src="images/instagram.png" alt="Instagram Icon" >
             </a>
-        </nav>
+        </div>
         
     </footer>
 </body>
