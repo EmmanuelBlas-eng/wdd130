@@ -180,11 +180,11 @@ footer p {
   transform: scale(1.1); /* Minor interaction effect */
 }
 
-/* ==========================================================================
-   NEW ADDITIONS: Layout alignments built directly over your references
-   ========================================================================== */
+/* ======================
+   NEW ADDITIONS: Layout
+   ====================== */
 
-/* History 3-Column Grid Wireframe Layout */
+
 .history-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -200,7 +200,7 @@ footer p {
   border-radius: 4px;
 }
 
-/* Adventure 5-Column Figure Grid Wireframe Layout */
+
 .adventure-gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
