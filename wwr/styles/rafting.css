@@ -1,6 +1,6 @@
 /* Variable reset */
 :root {
-  --primary-color: #055a05;      /* Forest Green */
+  --primary-color:#055a05;      /* Forest Green */
   --secondary-color: #f4a261;    /* Warm Sand */
   --accent1-color: #264653;      /* Dark Slate Blue */
   --accent2-color: #FFF9C4;      /* Light Golden Yellow */
@@ -17,7 +17,7 @@
 /* General Page Styling */
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
+  color: var(--accent1-color, #264653);
   background-color: #fafafa; /* Soft off-white background */
   text-align: center;
 }
@@ -29,7 +29,7 @@ header, main, footer {
 
 h1, h2 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: var(--primary-color,  #055a05 );
 }
 
 nav, p, section, article {
@@ -43,9 +43,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, #055a05);
   padding: 10px 20px;
-}
+} 
 
 header .logo {
   max-height: 70px; /* Ensures logo scales properly */
@@ -58,7 +58,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: var(--accent2-color);
+  color: var(--accent2-color, #FFF9C4);
   text-decoration: none;
   padding: 8px 16px;
   font-weight: bold;
@@ -88,7 +88,7 @@ h1 {
   padding: 16px;
   text-align: center;
   opacity: 0.85;
-  background-color: var(--accent1-color);
+  background-color: var(--accent1-color, #264653);
   color: #fff; 
 }
 
@@ -109,7 +109,7 @@ h1 {
   width: 125px;
   margin-left: 15px;
   margin-bottom: 5px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-color,  #055a05);
 }
 
 .hero article h2 {
@@ -128,7 +128,7 @@ h1 {
 /* Section Styling */
 .history-section, .adventure-section {
   background-color: #fff;
-  border-top: 4px solid var(--secondary-color);
+  border-top: 4px solid var(--secondary-color, #f4a261);
   margin: 20px 0;
   padding: 20px;
 }
@@ -145,7 +145,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--accent1-color);
+  background-color: var(--accent1-color, #264653);
   color: #fff;
   padding: 15px 20px;
   margin-top: 30px;
@@ -226,5 +226,5 @@ footer p {
   font-family: var(--body-font);
   font-size: 0.85rem;
   font-weight: bold;
-  color: var(--accent1-color);
+  color: var(--accent1-color, #264653);
 }
