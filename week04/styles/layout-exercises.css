@@ -23,24 +23,32 @@ div {
 
 .flex {
     background-color: #aba;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     /* write declarations here */
 
 }
 
 .grid {
     background-color: #abb;
+    display: grid;
+    place-items: center;
     /* enter declarations here */
 
 }
 
 .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     /* write declarations here */
 
 }
 
 .two {
     background-color: #ace;
-    height: 100px;
+    height: 100px ; 
 }
 
 .container3 {
