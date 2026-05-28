@@ -40,8 +40,8 @@ nav, p, section, article {
 
 /* Header and Nav Styling */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 120px 1fr;
   align-items: center;
   background-color: var(--primary-color, #055a05);
   padding: 10px 20px;
@@ -54,6 +54,7 @@ header .logo {
 
 header nav ul {
   display: flex;
+  justify-content: end;
   list-style-type: none;
 }
 
@@ -97,7 +98,7 @@ h1 {
   bottom: 80px;
   left: 20px;
   right: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Opaque white box so text is readable */
+  background-color: rgba (255, 255, 255, 0.9); /* Opaque white box so text is readable */
   padding: 20px;
   border-radius: 5px;
   margin: 0;
