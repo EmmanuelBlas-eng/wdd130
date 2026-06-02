@@ -1,0 +1,148 @@
+/* Base Reset and Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Container Box */
+.form-container {
+    background-color: #ededed;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 550px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Heading Style */
+h1 {
+    color: #000080; /* Navy Blue */
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Fieldset and Legend Styling */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #ededed;
+}
+
+legend {
+    color: #000080;
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+/* Form Layouts */
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns input fields neatly to the right */
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    margin-right: 15px;
+    color: #444444;
+}
+
+/* Input & Select Box styling */
+input[type="text"],
+input[type="email"],
+select {
+    width: 65%;
+    padding: 6px;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    font-family: inherit;
+}
+
+/* Specific alignments for the Questions section */
+.form-group.row {
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.form-group.row label {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Textarea Layout (Stacked) */
+.form-group.column {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.form-group.column label {
+    margin-right: 0;
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    resize: vertical;
+    font-family: inherit;
+    color: #666666;
+}
+
+/* Submit Button styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #000066;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    color: #777777;
+    font-size: 0.9rem;
+    border-top: 1px solid #dddddd;
+    width: 100%;
+    max-width: 550px;
+    padding-top: 15px;
+}
