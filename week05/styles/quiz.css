@@ -1,0 +1,146 @@
+/* Reset & Page Setup */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Quiz Wrapper Constraints */
+.quiz-wrapper {
+    width: 100%;
+    max-width: 660px;
+}
+
+/* Styled Header Title */
+.quiz-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000B76;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Checkbox Icon Realization */
+.checkbox-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right: 12px;
+}
+
+/* Main Quiz Card Box */
+.quiz-container {
+    background-color: #f0f0f0;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 35px 30px;
+}
+
+/* Form Spacing */
+.form-group {
+    margin-bottom: 28px;
+}
+
+/* Question Typography */
+.question-label {
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000B76;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Shared Input Component Styling */
+.form-input, .form-textarea, .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 2px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-input {
+    height: 40px;
+}
+
+.form-textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+/* Custom Dropdown Styling */
+.select-wrapper {
+    position: relative;
+}
+
+.form-select {
+    height: 42px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path d='M0 3l5 5 5-5z' fill='%23000000'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 10px;
+    padding-right: 40px;
+    color: #333333;
+}
+
+/* Centered Monospace Code Block */
+.code-box-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.code-box {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    width: 80%;
+    padding: 18px 20px;
+    font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+/* Submission Button */
+.submit-btn {
+    width: 100%;
+    background-color: #000B76;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #000854;
+}
