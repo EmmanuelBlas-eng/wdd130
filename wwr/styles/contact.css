@@ -32,6 +32,10 @@ h1, h2 {
   color: var(--primary-color,  #055a05 );
 }
 
+section h2 {
+  font-size: medium;
+}
+
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
@@ -109,9 +113,33 @@ header nav ul li a:hover {
   gap: 30px;
   margin: 20px 0;
   text-align: left;
+  align-items: start;
+}
+
+.contact-container > h2 {
+  grid-column: 1 / -1;
+  margin: 0 0 8px 0;
+  align-self: start;
+  justify-self: start;
+  font-size: 1.5rem;
+  color: #000;
 }
 
 /* Map Styling */
+.map-box {
+  align-self: start;
+  width: auto;
+  height: 100%;
+}
+
+.map-box iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 345px;
+  border: 0;
+}
+
 .map-box img {
   width: 100%;
   height: 100%;
@@ -201,7 +229,8 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 10px 0; /* Aligns with input layout fields above */
+  margin-left: 10px;
+  margin-bottom: 0;
   padding: 0 1rem 1rem 1rem;
 }
 
