@@ -240,22 +240,6 @@
   text-align: center;
 }
 
-.socialmedia {
+.contact-footer .socialmedia {
   justify-self: end;
-  display: flex;
-  gap: 15px;
-}
-
-.socialmedia a {
-  text-decoration: none;
-}
-
-.socialmedia img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.2s;
-}
-
-.socialmedia img:hover {
-  transform: scale(1.1);
 }
