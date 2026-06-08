@@ -18,12 +18,12 @@
 body {
   font-family: var(--body-font);
   color: var(--accent1-color, #264653);
-  background-color: #fafafa; /* Soft off-white background */
-  text-align: center;
+  background-color: #fafafa;
+  text-align: left;
 }
 
 header, main, footer {
-  width: 840px;
+  width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
 }
 
@@ -33,8 +33,8 @@ h1, h2 {
 }
 
 nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+  margin: 16px 0;
+  padding: 8px 0;
 }
 
 
@@ -79,30 +79,33 @@ header nav ul li a:hover {
 .hero > img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
+  left: 0;
   width: 100%;
   padding: 16px;
   text-align: center;
   opacity: 0.85;
   background-color: var(--accent1-color, #264653);
-  color: #fff; 
+  color: #fff;
 }
 
 .hero article {
   position:absolute;
-  bottom: 80px;
-  left: 20px;
-  right: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Opaque white box so text is readable */
-  padding: 20px;
-  border-radius: 5px;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 16px;
+  border-radius: 8px;
   margin: 0;
-
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
 .hero article img {
@@ -115,15 +118,14 @@ h1 {
 
 .hero article h2 {
   margin-bottom: 10px;
-  position: absolute;
-  margin: 0 0 0 20rem;
+  position: static;
 }
 
 .hero article p {
-  margin-top: 50px;
+  margin-top: 0;
   padding: 0;
   line-height: 1.5;
-  text-align: justify;
+  text-align: left;
 }
 
 /* Section Styling */
@@ -150,13 +152,14 @@ footer {
   color: #fff;
   padding: 15px 20px;
   margin-top: 30px;
-  
-  
 }
 
 footer p {
-  margin: 0 0 0 10rem;
+  margin: 0 auto;
   padding: 0;
+  text-align: center;
+  flex: 1 1 auto;
+  width: 100%;
 }
 
 
@@ -196,7 +199,9 @@ footer p {
 
 .history-col.image-col img {
   width: 100%;
-  height: auto;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
   display: block;
   border-radius: 4px;
 }
